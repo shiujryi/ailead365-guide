@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="基隆市立中山高級中學 AILEAD365 數位學習平台使用指南。高中、國中學生與教師的登入說明、操作教學及常見問題。">
+  <meta name="description" content="基隆市立中山高級中學 AILEAD365 登入指南：高中、國中學生與教師帳號說明，以及官方使用說明入口。">
   <meta name="theme-color" content="#123c3b">
   <title>AILEAD365 使用指南｜基隆市立中山高級中學</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
@@ -20,100 +20,105 @@
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">選單 <span aria-hidden="true">☰</span></button>
       <nav id="site-nav" class="site-nav" aria-label="主要導覽">
-        <a href="#platform">認識平台</a>
-        <a href="#start">登入與教學</a>
-        <a href="#faq">常見問題</a>
-        <a class="nav-login" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往平台 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a>
+        <a href="#start">登入帳號</a>
+        <a href="#guide">使用說明</a>
+        <a class="nav-login" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">登入平台 ↗<span class="sr-only">（另開分頁）</span></a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 中山的學習，不只在教室裡</p>
-          <h1 id="hero-title">讓每一次練習，<br>都成為<span class="title-accent">前進的一步。</span></h1>
-          <p class="hero-description">歡迎使用 AILEAD365 數位學習平台。<br>從登入到日常學習，陪你找到自己的節奏。</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#start">找到我的使用指南 <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">直接登入平台 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a>
-          </div>
-          <div class="hero-caption"><span aria-hidden="true">◎</span> 高中學生・國中學生・教師，一站開始</div>
+  <main id="main" class="container">
+    <div class="page-intro">
+      <p class="eyebrow">AILEAD365 · 中山高中</p>
+      <h1 id="hero-title">登入帳號指南</h1>
+      <p>選擇你的身分，確認帳號後即可前往平台。</p>
+    </div>
+
+    <section id="start" class="account-section" aria-labelledby="start-title">
+      <h2 id="start-title" class="section-label"><span aria-hidden="true">01</span> 登入帳號</h2>
+      <div class="role-tabs" role="tablist" aria-label="選擇使用身分">
+        <button id="tab-senior" class="role-tab" type="button" role="tab" aria-selected="true" aria-controls="panel-senior" tabindex="0">高中學生</button>
+        <button id="tab-junior" class="role-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-junior" tabindex="-1">國中學生</button>
+        <button id="tab-teacher" class="role-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-teacher" tabindex="-1">教師</button>
+      </div>
+      <noscript><p class="no-script">以下依序顯示三種身分的登入資訊。</p></noscript>
+
+      <div class="role-panel" id="panel-senior" role="tabpanel" aria-labelledby="tab-senior" tabindex="0">
+        <div class="account-details">
+          <p class="account-role">高中學生帳號</p>
+          <h3 class="account-value">6 碼學號</h3>
+          <p class="account-hint">請使用半形數字，保留開頭的 0。</p>
+          <dl class="account-info">
+            <div><dt>密碼取得</dt><dd>請向導師或教務處確認。</dd></div>
+            <div><dt>密碼變更</dt><dd>學生不可自行修改密碼。</dd></div>
+          </dl>
+          <p class="contact-note">無法登入？請洽導師或教務處。</p>
         </div>
-        <div class="hero-art" aria-label="以課本、練習及學習進度構成的數位學習示意圖">
-          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-          <span class="art-star" aria-hidden="true">✳</span>
-          <div class="learning-window">
-            <div class="window-top"><span class="window-dots" aria-hidden="true">● ● ●</span><span>MY LEARNING SPACE</span></div>
-            <div class="window-body">
-              <div class="window-greeting">你好，今天也一起進步！<span>一點一滴，累積你的學習力。</span></div>
-              <div class="book-scene" aria-hidden="true"><svg viewBox="0 0 320 160" fill="none"><path d="M28 116 157 147 291 111 165 77Z" fill="#163e3d" opacity=".08"/><path d="m43 45 108 26 125-30v76l-125 30-108-26Z" fill="#e2e8dc" stroke="#244f4a" stroke-width="2"/><path d="M151 71v76" stroke="#244f4a" stroke-width="2"/><path d="m43 35 108 26 125-30v76l-125 30-108-26Z" fill="#fffdf4" stroke="#244f4a" stroke-width="2"/><path d="M151 61v76M62 60l66 16M62 74l66 16M62 88l48 12M174 69l79-19M174 83l79-19M174 97l52-13" stroke="#9eb5a3" stroke-width="3" stroke-linecap="round"/><path d="m219 18 15-3v63l-8-5-7 9Z" fill="#dc8e71"/><path d="m56 129 95 23 118-29" stroke="#244f4a" stroke-width="2"/></svg></div>
-              <div class="art-subjects"><span>理解觀念</span><span>動手練習</span><span>回顧進步</span></div>
-              <div class="art-progress"><span>每天的一小步</span><span>持續累積中 <span aria-hidden="true">↗</span></span><div><i></i></div></div>
-            </div>
-          </div>
-          <div class="floating-note note-top"><span class="note-icon" aria-hidden="true">✓</span><div>照自己的步調<small>把不懂，變成懂了</small></div></div>
-          <div class="floating-note note-bottom"><span class="note-icon peach" aria-hidden="true">✦</span><div>學習，多一種可能<small>從今天的小目標開始</small></div></div>
-          <span class="illustration-label">學習情境示意，非平台實際畫面</span>
+        <div class="login-card">
+          <span class="login-symbol" aria-hidden="true">↗</span>
+          <h3>學校專屬登入入口</h3>
+          <p class="domain">csjhkl.ailead365.com</p>
+          <a class="button button-primary" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往平台登入 ↗<span class="sr-only">（另開分頁）</span></a>
+          <p class="login-note">密碼僅由校內受控管道提供。</p>
+        </div>
+      </div>
+
+      <div class="role-panel" id="panel-junior" role="tabpanel" aria-labelledby="tab-junior" tabindex="0">
+        <div class="account-details">
+          <p class="account-role">國中學生帳號</p>
+          <h3 class="account-value">6 碼學號</h3>
+          <p class="account-hint">請使用半形數字，保留開頭的 0。</p>
+          <dl class="account-info">
+            <div><dt>密碼取得</dt><dd>請向導師或教務處確認。</dd></div>
+            <div><dt>密碼變更</dt><dd>學生不可自行修改密碼。</dd></div>
+          </dl>
+          <p class="contact-note">無法登入？請洽導師或教務處。</p>
+        </div>
+        <div class="login-card">
+          <span class="login-symbol" aria-hidden="true">↗</span>
+          <h3>學校專屬登入入口</h3>
+          <p class="domain">csjhkl.ailead365.com</p>
+          <a class="button button-primary" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往平台登入 ↗<span class="sr-only">（另開分頁）</span></a>
+          <p class="login-note">密碼僅由校內受控管道提供。</p>
+        </div>
+      </div>
+
+      <div class="role-panel" id="panel-teacher" role="tabpanel" aria-labelledby="tab-teacher" tabindex="0">
+        <div class="account-details">
+          <p class="account-role">教師帳號</p>
+          <h3 class="account-value">OpenID 帳號</h3>
+          <p class="account-hint">原則上使用 OpenID，例如 aa1234；少數教師另建帳號。</p>
+          <dl class="account-info">
+            <div><dt>初始密碼</dt><dd>請向校內窗口取得。</dd></div>
+            <div><dt>密碼變更</dt><dd>登入後可自行修改，建議首次登入即變更。</dd></div>
+          </dl>
+          <p class="contact-note">不確定帳號或無法登入？請洽教務主任。</p>
+        </div>
+        <div class="login-card">
+          <span class="login-symbol" aria-hidden="true">↗</span>
+          <h3>學校專屬登入入口</h3>
+          <p class="domain">csjhkl.ailead365.com</p>
+          <a class="button button-primary" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往平台登入 ↗<span class="sr-only">（另開分頁）</span></a>
+          <p class="login-note">密碼僅由校內受控管道提供。</p>
         </div>
       </div>
     </section>
 
-    <div class="quick-bar"><div class="container quick-inner"><span class="quick-label">開始之前 <span aria-hidden="true">↘</span></span><span><b>01</b> 選擇使用身分</span><span><b>02</b> 確認登入資訊</span><span><b>03</b> 展開學習旅程</span></div></div>
-
-    <section id="platform" class="section platform-section" aria-labelledby="platform-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">MEET AILEAD365</p><h2 id="platform-title">測評、補強、回顧，串起學習。</h2></div><p>整合國小、國中與高中的線上教學，<br>以測評、影片與診斷分析，支持適性學習。</p></div>
-        <div class="feature-grid">
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">✎</span><span class="feature-number">01 / ASSESS</span><h3>AI 測評，找出學習弱點</h3><p>支援全班或個人的線上測驗與評量。測後即時回饋成績，分析知識向度與弱點，讓練習更有方向。</p><span class="feature-tag">先了解，再安排練習</span></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">▷</span><span class="feature-number">02 / STRENGTHEN</span><h3>補強影片，把觀念學穩</h3><p>依測驗弱點由 AI 挑選補強影片，也可由教師派發全班或個人的影片，支援課前預習與課後輔導。</p><span class="feature-tag">讓不懂的地方，多一次理解</span></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">↗</span><span class="feature-number">03 / REFLECT</span><h3>診斷分析，看見學習歷程</h3><p>自動保留測驗與影片觀看紀錄，累積個人的學習歷程。教師可追蹤完成情形，學生可針對弱點複習。</p><span class="feature-tag">用紀錄，找到下一步</span></article>
-        </div>
-        <div class="capabilities" aria-label="更多平台特色"><div><h3>課綱與版本對照</h3><p>依十二年國教課綱製作，支援適南、適康、適翰版本對照，教材按學年更新。</p></div><div><h3>遠端教學與即時提問</h3><p>支援遠端派發、測驗及觀看狀況回饋；學生可透過平台發問，由真人回覆。</p></div><div><h3>教學管理與追蹤</h3><p>教師可掌握測驗及影片學習情形；全校數據與使用紀錄依管理權限提供。</p></div></div>
-        <div class="source-note"><span aria-hidden="true">ⓘ</span><p>功能摘要依官方產品介紹文字整理；適用科目、版本、提問與管理權限，以學校開通內容及登入後畫面為準。<a href="https://www.leadu-edu.com/products-detail/34/" target="_blank" rel="noopener noreferrer">查看官方產品介紹 ↗<span class="sr-only">（另開分頁）</span></a></p></div>
+    <section id="guide" class="guide-section" aria-labelledby="guide-title">
+      <div>
+        <p class="section-label"><span aria-hidden="true">02</span> 使用說明</p>
+        <h2 id="guide-title">平台操作，請看官方說明</h2>
+        <p>測驗、影片與其他功能，請參閱 AILEAD365 官方頁面。</p>
       </div>
+      <a class="button button-outline" href="https://www.leadu-edu.com/products/59/" target="_blank" rel="noopener noreferrer">查看官方使用說明 ↗<span class="sr-only">（另開分頁）</span></a>
     </section>
-
-    <section id="start" class="section start-section" aria-labelledby="start-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">YOUR QUICK START</p><h2 id="start-title">選擇身分，從這裡開始。</h2></div><p>登入資訊與操作步驟，<br>一次找到適合你的版本。</p></div>
-        <div class="role-tabs" role="tablist" aria-label="選擇使用身分">
-          <button id="tab-senior" class="role-tab" type="button" role="tab" aria-selected="true" aria-controls="panel-senior" tabindex="0" data-role="senior"><span aria-hidden="true">01</span> 高中學生 <span class="tab-arrow" aria-hidden="true">↗</span></button>
-          <button id="tab-junior" class="role-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-junior" tabindex="-1" data-role="junior"><span aria-hidden="true">02</span> 國中學生 <span class="tab-arrow" aria-hidden="true">↗</span></button>
-          <button id="tab-teacher" class="role-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-teacher" tabindex="-1" data-role="teacher"><span aria-hidden="true">03</span> 教師 <span class="tab-arrow" aria-hidden="true">↗</span></button>
-        </div>
-        <noscript><p class="no-script">未啟用 JavaScript：以下依序顯示高中學生、國中學生與教師指南。</p></noscript>
-        <div class="role-panel" id="panel-senior" role="tabpanel" aria-labelledby="tab-senior" tabindex="0">
-          <div class="account-card"><div class="account-heading"><span class="pill">高中學生</span><h3>準備好你的登入資訊</h3><p>使用學校提供的帳號，開始自主學習。</p></div><dl class="account-info"><div><dt>登入帳號</dt><dd>6 碼學號<span>請完整輸入，保留開頭的 0。</span></dd></div><div><dt>登入密碼</dt><dd>由校內受控管道提供<span>請向導師或教務處確認，勿公開分享。</span></dd></div><div><dt>密碼變更</dt><dd>學生不可自行修改密碼<span>登入有困難時，請由校內協助處理。</span></dd></div></dl><a class="button button-primary full-width" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往 AILEAD365 登入 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a><p class="account-footnote">本指南不收集或驗證你的帳號密碼。</p></div>
-          <div class="tutorial"><p class="eyebrow">STUDENT GUIDE</p><h3>高中學生的學習起點</h3><ol class="steps"><li><h4>進入學校專屬登入頁</h4><p>點選登入按鈕，確認網址為 <span class="domain">csjhkl.ailead365.com</span>，輸入 6 碼學號與校內提供的密碼。</p></li><li><h4>先看老師的課程安排</h4><p>登入後依畫面尋找老師指定的課程、教材或任務；若找不到內容，先向授課教師確認開放範圍。</p></li><li><h4>完成練習，確認送出</h4><p>閱讀任務說明與期限，依序完成內容。需要繳交的作答，請確認畫面顯示送出或完成狀態後再離開。</p></li><li><h4>依診斷結果補強觀念</h4><p>查看測驗分析與系統建議的補強影片，再回顧學習紀錄。仍有疑問可使用平台已開通的提問功能，或請教老師；共用裝置使用後記得登出。</p></li></ol><div class="tip"><span aria-hidden="true">✦</span><p><strong>給自己的小提醒</strong>先完成老師指定任務，再安排一小段時間複習，把學習變成每天的習慣。</p></div></div>
-        </div>
-        <div class="role-panel" id="panel-junior" role="tabpanel" aria-labelledby="tab-junior" tabindex="0">
-          <div class="account-card"><div class="account-heading"><span class="pill">國中學生</span><h3>用自己的學號開始</h3><p>先確認帳號，再跟著老師的安排學習。</p></div><dl class="account-info"><div><dt>登入帳號</dt><dd>6 碼學號<span>請完整輸入，保留開頭的 0。</span></dd></div><div><dt>登入密碼</dt><dd>由校內受控管道提供<span>請向導師或教務處確認，勿公開分享。</span></dd></div><div><dt>密碼變更</dt><dd>學生不可自行修改密碼<span>請勿嘗試修改；遇到問題請聯絡校內人員。</span></dd></div></dl><a class="button button-primary full-width" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往 AILEAD365 登入 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a><p class="account-footnote">本指南不收集或驗證你的帳號密碼。</p></div>
-          <div class="tutorial"><p class="eyebrow">STUDENT GUIDE</p><h3>國中學生的四個開始步驟</h3><ol class="steps"><li><h4>登入學校專屬平台</h4><p>確認網址為 <span class="domain">csjhkl.ailead365.com</span>，輸入 6 碼學號；密碼請依校內受控通知取得。</p></li><li><h4>找到老師指定的內容</h4><p>依老師說明開啟課程、教材或任務。年級、科目或班級內容不符時，先請老師協助確認。</p></li><li><h4>讀懂題目，再完成作答</h4><p>先看說明與期限，再完成練習。若有送出按鈕，請依畫面操作並確認完成狀態，避免只作答卻未繳交。</p></li><li><h4>把不懂的地方留下來</h4><p>查看測驗分析與推薦補強影片，記下還不懂的觀念，可透過已開通的提問功能發問，或帶到課堂請教老師。離開共用裝置前務必登出。</p></li></ol><div class="tip"><span aria-hidden="true">✦</span><p><strong>不會的題目，是下一步的起點</strong>先試著理解，再向老師提問；不要把帳號交給同學代做。</p></div></div>
-        </div>
-        <div class="role-panel" id="panel-teacher" role="tabpanel" aria-labelledby="tab-teacher" tabindex="0">
-          <div class="account-card"><div class="account-heading"><span class="pill">教師</span><h3>備課與教學，從這裡接軌</h3><p>使用校內提供的教師帳號進入平台。</p></div><dl class="account-info"><div><dt>登入帳號</dt><dd>原則上使用 OpenID 帳號<span>例如 aa1234；少數教師使用另行建立的帳號。</span></dd></div><div><dt>首次登入</dt><dd>初始密碼請洽校內窗口<span>共用初始密碼不在公開網站提供。</span></dd></div><div><dt>密碼變更</dt><dd>登入後可自行修改密碼<span>建議首次登入後即變更，並避免重複使用。</span></dd></div></dl><a class="button button-primary full-width" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">前往 AILEAD365 登入 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a><p class="account-footnote">帳號不符或無法登入，請洽教務主任。</p></div>
-          <div class="tutorial"><p class="eyebrow">TEACHER GUIDE</p><h3>教師的教學準備流程</h3><ol class="steps"><li><h4>確認帳號並完成首次登入</h4><p>原則上以 OpenID 帳號登入學校專屬平台；若另有建置帳號或無法登入，請洽教務主任確認。</p></li><li><h4>先更新密碼，再確認教學範圍</h4><p>依登入後的帳號或個人設定畫面修改密碼，重新登入確認有效；並核對可用的班級、年級與科目。</p></li><li><h4>選擇教材，安排學習任務</h4><p>依開通科目與校用版本選擇教材，安排線上測驗或派發影片。請核對班級或個別對象、範圍與期限，並把操作要求告知學生。</p></li><li><h4>檢視完成情形，給予回饋</h4><p>依權限查看測驗作答與影片觀看情形，搭配測後弱點分析安排補充教學。全校管理資料並非所有教師皆可查看；請勿公開學生名單或截圖。</p></li></ol><div class="tip"><span aria-hidden="true">✦</span><p><strong>畫面和教學不同時</strong>功能名稱與位置可能隨版本調整；請以實際介面為準，帳號及權限問題請洽教務主任。</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="privacy-strip" aria-labelledby="privacy-title"><div class="container privacy-inner"><span class="privacy-icon" aria-hidden="true">✓</span><div><p class="eyebrow">KEEP YOUR ACCOUNT SAFE</p><h2 id="privacy-title">學習可以分享，密碼請留給自己。</h2><p>密碼資訊僅透過校內受控管道提供。請勿在公開留言、社群或截圖中透露帳號密碼；使用共用裝置後記得登出。</p></div></div></section>
-
-    <section id="faq" class="section faq-section" aria-labelledby="faq-title"><div class="container faq-layout"><div class="faq-intro"><p class="eyebrow">A LITTLE HELP</p><h2 id="faq-title">卡住了？<br>先看看這裡。</h2><p>從登入到操作，<br>整理你可能遇到的小問題。</p><div class="help-card"><span aria-hidden="true">↗</span><h3>還需要協助嗎？</h3><p>學生請先洽導師或授課教師，必要時由教務處協助。教師帳號問題請洽教務主任。</p><small>描述問題時，請勿提供密碼或完整個資。</small></div></div><div class="faq-content"><div class="faq-filters" role="group" aria-label="篩選常見問題"><button type="button" class="filter-button" data-filter="all" aria-pressed="true">全部問題</button><button type="button" class="filter-button" data-filter="login" aria-pressed="false">登入與帳號</button><button type="button" class="filter-button" data-filter="learning" aria-pressed="false">學習與操作</button></div><p id="faq-count" class="sr-only" role="status" aria-live="polite"></p>
-          <details class="faq-item" data-category="login"><summary>學生帳號要輸入什麼？</summary><div class="faq-answer"><p>高中與國中學生皆使用 6 碼學號。請使用半形數字、保留開頭的 0，並檢查是否誤輸入空白。密碼請透過校內受控管道取得。</p></div></details>
-          <details class="faq-item" data-category="login"><summary>忘記密碼，或一直顯示登入失敗怎麼辦？</summary><div class="faq-answer"><p>先確認進入本校專屬網址，並檢查帳號、大小寫、前後空白及輸入法。學生不可自行修改密碼，請洽導師或教務處；教師請洽教務主任。請勿反覆猜測密碼，也不要把密碼貼到公開訊息中。</p></div></details>
-          <details class="faq-item" data-category="login"><summary>教師一定使用 OpenID 帳號嗎？</summary><div class="faq-answer"><p>原則上使用 OpenID 帳號，例如 aa1234；少數教師另行建立帳號。這是帳號命名說明，不代表使用 OpenID 的密碼。若不確定自己的登入資料，或無法登入，請洽教務主任確認。</p></div></details>
-          <details class="faq-item" data-category="login"><summary>可以修改密碼嗎？為什麼這裡沒有密碼？</summary><div class="faq-answer"><p>學生不可自行修改密碼；教師可在登入後依帳號或個人設定修改密碼，建議首次登入即變更。為保護帳號，公開指南不提供學生固定密碼規則與教師共用初始密碼，請向校內窗口取得。</p></div></details>
-          <details class="faq-item" data-category="learning"><summary>登入後看不到課程，或找不到老師的任務？</summary><div class="faq-answer"><p>先確認登入的是自己的帳號，並檢查老師提供的科目、班級、任務名稱與開放時間。可嘗試重新整理或登出再登入；仍找不到時，請授課教師確認指派對象與開通範圍。教師若發現班級或權限不符，請洽教務主任。</p></div></details>
-          <details class="faq-item" data-category="learning"><summary>完成作答後，需要再按送出嗎？</summary><div class="faq-answer"><p>請依當次任務畫面操作。若有送出或繳交按鈕，請完成確認，並檢查是否出現完成、已繳交或類似狀態。網路中斷時先重新連線，確認紀錄後再決定是否重做；有疑問請告知授課教師，勿只關閉分頁就認定已繳交。</p></div></details>
-          <details class="faq-item" data-category="learning"><summary>手機和平板可以使用嗎？頁面載入異常怎麼辦？</summary><div class="faq-answer"><p>本指南支援手機、平板及電腦。平台實際操作相容性依官方服務為準，建議使用更新版本的 Chrome、Edge 或 Safari，並保持網路穩定。載入異常時可重新整理，或改用其他瀏覽器；提供錯誤畫面給校內窗口前，請遮蔽姓名、學號等個資。</p></div></details>
-          <details class="faq-item" data-category="learning"><summary>這個指南會保存我的帳號、密碼或學習紀錄嗎？</summary><div class="faq-answer"><p>不會。本指南是靜態說明網站，沒有登入表單、資料庫、分析追蹤碼或帳號清冊。登入按鈕會另開分頁進入 AILEAD365；登入與學習資料由該平台處理。請勿在本專案的公開議題或檔案中張貼個資。</p></div></details>
-        </div></div></section>
-
-    <section class="closing-section"><div class="container closing-inner"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>準備好了，就從今天開始。</h2><p>帶著好奇心，展開你的下一段學習。</p></div><a class="button button-light" href="https://csjhkl.ailead365.com/auth/login" target="_blank" rel="noopener noreferrer">進入 AILEAD365 <span aria-hidden="true">↗</span><span class="sr-only">（另開分頁）</span></a></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><div><strong>基隆市立中山高級中學</strong><p>AILEAD365 數位學習平台使用指南</p></div><p>本站為校內平台使用說明，非平台登入頁面。<br>平台服務與教材內容以官方及學校實際開通版本為準。</p><a href="#hero-title">回到頂端 ↑</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>本指南不收集帳號密碼。共用裝置使用後，請記得登出。</p>
+      <a href="#hero-title">回到頂端 ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

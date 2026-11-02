@@ -55,19 +55,5 @@ document.addEventListener('click', event => {
 const mobileLayout = window.matchMedia('(max-width: 760px)');
 mobileLayout.addEventListener('change', () => closeMenu());
 
-const filterButtons = [...document.querySelectorAll('[data-filter]')];
-const questions = [...document.querySelectorAll('.faq-item')];
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    filterButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-    let count = 0;
-    questions.forEach(question => {
-      question.hidden = button.dataset.filter !== 'all' && question.dataset.category !== button.dataset.filter;
-      if (!question.hidden) count += 1;
-    });
-    document.querySelector('#faq-count').textContent = `顯示 ${count} 則常見問題`;
-  });
-});
-
-// Progressive enhancement: without JavaScript every guide and FAQ remains readable.
+// Progressive enhancement: without JavaScript every account panel remains readable.
 document.documentElement.classList.add('js');
