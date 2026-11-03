@@ -143,9 +143,16 @@ h1 { font-size: clamp(30px, 4vw, 40px); line-height: 1.5; margin-top: 5px; }
 .no-script { font-size: 13px; margin-bottom: 16px; }
 
 /* Detailed platform instructions are linked to the official site. */
-.guide-section { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 28px 30px; margin-block: 24px 36px; background: #eef1e9; border: 1px solid var(--line); border-radius: 16px; }
+.guide-section { padding: 28px 30px; margin-block: 24px 36px; background: #eef1e9; border: 1px solid var(--line); border-radius: 16px; }
+.guide-header { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .guide-section h2 { font-size: 22px; line-height: 1.5; margin-top: 7px; }
 .guide-section p:last-child { font-size: 13px; color: var(--muted); margin-top: 7px; }
+.video-heading { font-size: 13px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.video-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 10px; }
+.video-link { display: flex; align-items: center; gap: 10px; min-height: 56px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); font-size: 14px; font-weight: 700; text-decoration: none; }
+.video-link:hover { border-color: var(--green); background: #fffefa; }
+.play-icon { font-size: 12px; color: var(--green); }
+.video-platform { margin-left: auto; font-size: 11px; font-weight: 400; color: var(--muted); white-space: nowrap; }
 .button-outline { border: 1px solid var(--ink); color: var(--ink); flex-shrink: 0; }
 .button-outline:hover { background: #e0e7d8; }
 .site-footer { padding-block: 22px; border-top: 1px solid var(--line); }
@@ -177,7 +184,10 @@ h1 { font-size: clamp(30px, 4vw, 40px); line-height: 1.5; margin-top: 5px; }
   .login-symbol { display: none; }
   .login-card h3 { margin-top: 0; font-size: 16px; }
   .login-card .button { margin-top: 12px; }
-  .guide-section { flex-direction: column; align-items: stretch; gap: 18px; padding: 22px; margin-block: 20px 26px; }
+  .guide-section { padding: 22px; margin-block: 20px 26px; }
+  .guide-header { flex-direction: column; align-items: stretch; gap: 18px; }
+  .video-links { grid-template-columns: 1fr; }
+  .video-link { padding-inline: 12px; font-size: 13px; }
   .guide-section h2 { font-size: 20px; }
   .footer-inner { flex-direction: column; gap: 10px; }
 }

@@ -3,7 +3,7 @@
 繁體中文響應式靜態網站，以兩項內容為主：
 
 1. **登入帳號說明（優先）**：高中、國中學生與教師身分切換、帳號格式、密碼取得方式及校內協助窗口。
-2. **官方使用說明**：引導至 <https://www.leadu-edu.com/products/59/>，不在本站重複長篇操作教學。
+2. **官方使用說明**：引導至 <https://www.leadu-edu.com/products/59/>，並提供學生、教師操作教學影片連結，不在本站重複長篇操作教學。
 
 使用 HTML、CSS、原生 JavaScript，沒有後端、資料庫或網站執行相依套件。
 
@@ -47,6 +47,7 @@ tests/browser.cjs              # Playwright 瀏覽器驗收
 - **登入資訊**：編輯 `index.html` 的 `panel-senior`、`panel-junior`、`panel-teacher`。保留分頁 ID 與 `aria-controls`、`aria-labelledby` 關係。
 - **登入網址**：搜尋並更新 `https://csjhkl.ailead365.com/auth/login` 與畫面顯示的網域。
 - **官方使用說明**：修改 `#guide` 內連結，目前使用需求指定的 `https://www.leadu-edu.com/products/59/`。
+- **教學影片**：修改 `#guide` 內的 `.video-link`。目前學生影片為 <https://youtu.be/BMvBKnkbPfA?si=Q8i2r7RfLgb92Bi9>，教師影片為 <https://youtu.be/eTpssOyviU4?si=uCr1YcdNb-XpSWUK>；由需求提供者提供，點選後於 YouTube 另開分頁播放，本站不嵌入播放器。
 - **外觀**：編輯 `assets/styles.css`，`:root` 控制色彩，媒體查詢處理手機版面。
 - **互動**：編輯 `assets/app.js`；身分狀態只保存在當次頁面記憶體。
 
