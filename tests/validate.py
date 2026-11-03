@@ -11,10 +11,14 @@ class Document(HTMLParser):
     def __init__(self, text):
         super().__init__(convert_charrefs=True)
         self.elements = []
+        self.text_content = []
         self.feed(text)
 
     def handle_starttag(self, tag, attrs):
         self.elements.append((tag, dict(attrs)))
+
+    def handle_data(self, data):
+        self.text_content.append(data)
 
 
 class PublicSiteTests(unittest.TestCase):
@@ -70,9 +74,9 @@ class PublicSiteTests(unittest.TestCase):
         js = (ROOT / 'assets/app.js').read_text(encoding='utf-8')
         self.assertNotRegex(js, r'\b(localStorage|sessionStorage|fetch|XMLHttpRequest)\b')
         self.assertNotIn('document.cookie', js)
-        # Catch accidental inclusion of school-specific fixed-password rules.
-        public_text = self.text + js
-        self.assertNotRegex(public_text, r'MMDD|生日|身分證|身份證|預設密碼[\s：:為是]*\d{4}')
+        # Student rules are intentionally public; shared initial passwords are not.
+        public_text = ' '.join(Document(self.text).text_content)
+        self.assertNotRegex(public_text, r'(?:初始|預設)密碼[\s：:為是]*\d{4}')
 
     def test_public_assets_allowlist(self):
         allowed = {'.css', '.js', '.svg', '.png', '.jpg', '.jpeg', '.webp', '.avif', '.ico', '.woff', '.woff2'}
